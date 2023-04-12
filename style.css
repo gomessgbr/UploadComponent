@@ -81,4 +81,62 @@ body {
   background: #fff;
   box-shadow: 0px 4px 16px #eae2fd;
   border-radius: 8px;
+
+  display: flex;
+
+  gap: 12px;
+
+  --icon-bg: #eee;
+  --icon-color: #aaa;
+  --progress-color: black;
+  --progress-text: #999;
+}
+
+.box .icon {
+  background: var(--icon-bg);
+  border-radius: 4px;
+
+  padding: 16px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .icon i {
+  font-size: 24px;
+  color: var(--icon-color);
+}
+
+.box .info {
+  flex: 1;
+}
+
+.info .filename {
+  font-size: 14px;
+  font-weight: 700;
+  color: #575361;
+}
+
+.info .filesize {
+  color: #857e95;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  line-height: 0;
+  margin-top: 4px;
+}
+
+progress {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
 }
