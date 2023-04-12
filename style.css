@@ -10,16 +10,35 @@
   font-family: "Inter", sans-serif;
 }
 
+html,
 body {
-  background-color: #2c2c2c;
+  background: #fbfaff;
+  min-height: 100vh;
+  font-family: "Inter";
+  line-height: 130%;
 }
 
-.container {
-  background-color: #fff;
-  width: 27.5rem;
-  height: 26.5rem;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#app {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 8px;
+  width: 440px;
+
+  text-align: center;
+  padding: 28px 0 32px;
+
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
 }
